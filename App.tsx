@@ -75,9 +75,12 @@ const App: React.FC = () => {
       <nav className="bg-white border-b border-gray-200 z-30 shadow-sm flex-shrink-0">
         <div className="max-w-5xl mx-auto px-8 md:px-10 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <h1 className="text-xl font-bold tracking-tight">
+            <button 
+              onClick={handleBackToQueue}
+              className="text-xl font-bold tracking-tight hover:opacity-80 transition-opacity cursor-pointer"
+            >
               AutoQC <span className="text-blue-600">Pro</span>
-            </h1>
+            </button>
           </div>
         </div>
       </nav>
