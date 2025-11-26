@@ -1,0 +1,216 @@
+{
+  "VehicleModels": [
+    {
+      "Code": "Everest",
+      "Name": "Everest",
+      "VehicleType": "SUV"
+    },
+    {
+      "Code": "Ranger",
+      "Name": "Ranger",
+      "VehicleType": "Pickup"
+    }
+  ],
+  "QcCategories": [
+    {
+      "Code": "EXT",
+      "Name": "Exterior Inspection",
+      "SortOrder": 10
+    },
+    {
+      "Code": "INT",
+      "Name": "Interior Inspection",
+      "SortOrder": 20
+    },
+    {
+      "Code": "FNC",
+      "Name": "Functional Inspection",
+      "SortOrder": 30
+    },
+    {
+      "Code": "ENG",
+      "Name": "Engine and Fluid Inspection",
+      "SortOrder": 40
+    }
+  ],
+  "QcItems": [
+    {
+      "Id": 1001,
+      "QcCategoryCode": "EXT",
+      "Description": "Keep with 2 Remote Keys",
+      "DetailsOfInspection": "Present/Damage",
+      "CheckType": ["Appearance"],
+      "SortOrder": 10
+    },
+    {
+      "Id": 1002,
+      "QcCategoryCode": "EXT",
+      "Description": "Vin Tag on Windshield & Door Scuff-Rail",
+      "DetailsOfInspection": "Matching/Damage",
+      "CheckType": ["Appearance"],
+      "SortOrder": 20
+    },
+    {
+      "Id": 5001,
+      "QcCategoryCode": "INT",
+      "Description": "Steering Wheel Type, Condition, Adjustment Lever",
+      "DetailsOfInspection": "Deform/Fitment/Damage/Appearance",
+      "CheckType": ["Appearance"],
+      "SortOrder": 10
+    },
+    {
+      "Id": 6001,
+      "QcCategoryCode": "FNC",
+      "Description": "All Doors Function Test",
+      "DetailsOfInspection": "Function/Appearance",
+      "CheckType": ["Appearance", "Function"],
+      "SortOrder": 10
+    },
+    {
+      "Id": 7001,
+      "QcCategoryCode": "ENG",
+      "Description": "Brake Fluid Level and Cap",
+      "DetailsOfInspection": "Fluid Level/Cap Fitment",
+      "CheckType": ["Appearance"],
+      "SortOrder": 10
+    },
+    {
+      "Id": 7005,
+      "QcCategoryCode": "ENG",
+      "Description": "Oil Dipstick",
+      "DetailsOfInspection": "Present/Fitment",
+      "CheckType": ["Appearance"],
+      "SortOrder": 20
+    },
+    {
+      "Id": 1101,
+      "QcCategoryCode": "EXT",
+      "Description": "Lift Gate Exterior Surface",
+      "DetailsOfInspection": "Scratch/Paint Defects/Sheet Metal Damage",
+      "CheckType": ["Appearance"],
+      "SortOrder": 30
+    },
+    {
+      "Id": 5101,
+      "QcCategoryCode": "INT",
+      "Description": "Moonroof Operation",
+      "DetailsOfInspection": "Fitment/Function/Appearance",
+      "CheckType": ["Appearance", "Function"],
+      "SortOrder": 20
+    },
+    {
+      "Id": 6101,
+      "QcCategoryCode": "FNC",
+      "Description": "Lift Gate Power Function Test (Dash Button)",
+      "DetailsOfInspection": "Function",
+      "CheckType": ["Function"],
+      "SortOrder": 20
+    },
+    {
+      "Id": 1201,
+      "QcCategoryCode": "EXT",
+      "Description": "Tail Gate Exterior Surface",
+      "DetailsOfInspection": "Scratch/Paint Defects/Sheet Metal Damage",
+      "CheckType": ["Appearance"],
+      "SortOrder": 30
+    },
+    {
+      "Id": 8001,
+      "QcCategoryCode": "EXT",
+      "Description": "Wildtrak Sport Bar",
+      "DetailsOfInspection": "Correct/Fitment",
+      "CheckType": ["Appearance"],
+      "SortOrder": 40
+    },
+    {
+      "Id": 6201,
+      "QcCategoryCode": "FNC",
+      "Description": "Cargo Box Illumination Light",
+      "DetailsOfInspection": "Function",
+      "CheckType": ["Function"],
+      "SortOrder": 20
+    }
+  ],
+  "ModelQcItems": [
+    { "VehicleModelCode": "Everest", "QcItemId": 1001, "SortOrder": 10 },
+    { "VehicleModelCode": "Everest", "QcItemId": 1002, "SortOrder": 20 },
+    { "VehicleModelCode": "Everest", "QcItemId": 1101, "SortOrder": 30 },
+    { "VehicleModelCode": "Everest", "QcItemId": 5001, "SortOrder": 40 },
+    { "VehicleModelCode": "Everest", "QcItemId": 5101, "SortOrder": 50 },
+    { "VehicleModelCode": "Everest", "QcItemId": 6001, "SortOrder": 60 },
+    { "VehicleModelCode": "Everest", "QcItemId": 6101, "SortOrder": 70 },
+    { "VehicleModelCode": "Everest", "QcItemId": 7001, "SortOrder": 80 },
+    { "VehicleModelCode": "Everest", "QcItemId": 7005, "SortOrder": 90 },
+    { "VehicleModelCode": "Ranger", "QcItemId": 1001, "SortOrder": 10 },
+    { "VehicleModelCode": "Ranger", "QcItemId": 1002, "SortOrder": 20 },
+    { "VehicleModelCode": "Ranger", "QcItemId": 1201, "SortOrder": 30 },
+    { "VehicleModelCode": "Ranger", "QcItemId": 8001, "SortOrder": 40 },
+    { "VehicleModelCode": "Ranger", "QcItemId": 5001, "SortOrder": 50 },
+    { "VehicleModelCode": "Ranger", "QcItemId": 6001, "SortOrder": 60 },
+    { "VehicleModelCode": "Ranger", "QcItemId": 6201, "SortOrder": 70 },
+    { "VehicleModelCode": "Ranger", "QcItemId": 7001, "SortOrder": 80 },
+    { "VehicleModelCode": "Ranger", "QcItemId": 7005, "SortOrder": 90 }
+  ],
+  "SimulatedKits": [
+    {
+      "KitNumber": "EVS2024A001",
+      "VehicleModelCode": "Everest"
+    },
+    {
+      "KitNumber": "EVS2024A002",
+      "VehicleModelCode": "Everest"
+    },
+    {
+      "KitNumber": "RGR2024B001",
+      "VehicleModelCode": "Ranger"
+    },
+    {
+      "KitNumber": "RGR2024B002",
+      "VehicleModelCode": "Ranger"
+    }
+  ],
+  "KitQcEntries": [
+    {
+      "KitNumber": "EVS2024A001",
+      "QcItemId": 1001,
+      "SortOrder": 10,
+      "AppearanceStatus": "PASS",
+      "FunctionStatus": "N/A"
+    },
+    {
+      "KitNumber": "EVS2024A001",
+      "QcItemId": 1101,
+      "SortOrder": 30,
+      "AppearanceStatus": "FAIL",
+      "FunctionStatus": "N/A"
+    },
+    {
+      "KitNumber": "EVS2024A001",
+      "QcItemId": 6001,
+      "SortOrder": 60,
+      "AppearanceStatus": "PASS",
+      "FunctionStatus": "PASS"
+    },
+    {
+      "KitNumber": "EVS2024A002",
+      "QcItemId": 5001,
+      "SortOrder": 40,
+      "AppearanceStatus": "PASS",
+      "FunctionStatus": "N/A"
+    },
+    {
+      "KitNumber": "RGR2024B001",
+      "QcItemId": 8001,
+      "SortOrder": 40,
+      "AppearanceStatus": "FAIL",
+      "FunctionStatus": "N/A"
+    },
+    {
+      "KitNumber": "RGR2024B001",
+      "QcItemId": 6201,
+      "SortOrder": 70,
+      "AppearanceStatus": "N/A",
+      "FunctionStatus": "PASS"
+    }
+  ]
+}
