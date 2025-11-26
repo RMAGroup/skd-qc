@@ -89,13 +89,12 @@ const DataView: React.FC<DataViewProps> = ({ entries, onBack }) => {
                   const kitData = groupedEntries.get(entry.KitNumber);
                   const isComplete = kitData?.isComplete || false;
                   const isFirstInKit = index === 0 || entries[index - 1].KitNumber !== entry.KitNumber;
-                  const isLastInKit = index === entries.length - 1 || entries[index + 1].KitNumber !== entry.KitNumber;
                   
                   return (
                     <React.Fragment key={index}>
                       {isFirstInKit && index > 0 && (
-                        <tr className="h-3 bg-gray-100">
-                          <td colSpan={5} className="border-t-4 border-gray-400"></td>
+                        <tr className="h-2">
+                          <td colSpan={5}></td>
                         </tr>
                       )}
                       <tr 
@@ -103,9 +102,7 @@ const DataView: React.FC<DataViewProps> = ({ entries, onBack }) => {
                           isComplete ? 'bg-green-50 hover:bg-green-100/50' : 'bg-white hover:bg-gray-50'
                         }`}
                       >
-                        <td className={`px-4 py-3 font-medium border-l-4 ${
-                          isComplete ? 'text-green-900 border-green-500' : 'text-gray-900 border-blue-500'
-                        }`}>
+                        <td className={`px-4 py-3 font-medium ${isComplete ? 'text-green-900' : 'text-gray-900'}`}>
                           {entry.KitNumber}
                         </td>
                         <td className={`px-4 py-3 ${isComplete ? 'text-green-800' : 'text-gray-700'}`}>
